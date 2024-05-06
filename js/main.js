@@ -40,8 +40,8 @@ $(document).ready(function () {
         $('.header').toggleClass('mob-menu');
     });
 
-     // MOBILE LANG -------- //
-     $('.header__lang--mobile').on('click', function () {
+    // MOBILE LANG -------- //
+    $('.header__lang--mobile').on('click', function () {
         $(this).children('ul').slideToggle();
     });
 
@@ -65,6 +65,67 @@ $(document).ready(function () {
             $('.popup__window').removeClass('active');
         }
     });
+
+    // SCROLL ANIMATE
+    AOS.init({
+        once: true,
+        duration: 800,
+        easing: 'ease-in-out',
+        // disable: 'mobile',
+    });
+
+    // input mask
+    $('.phone-input').mask('+38 (999)999-99-99', {
+        onBeforeMask: function (t, e) { return t.replace(/^38/g, '') },
+        onBeforePaste: function (t, e) { return t.replace(/^38/g, '') }
+    });
+    $.fn.setCursorPosition = function (pos) {
+        if ($(this).get(0).setSelectionRange) {
+            $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+            var range = $(this).get(0).createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', pos);
+            range.moveStart('character', pos);
+            range.select();
+        }
+    };
+    $('input[name="phone"]').click(function () {
+        $(this).setCursorPosition(5);
+    });
+
+
+
+    //  ---aimation heroscreen
+
+
+    var isScrolling = false;
+    function updateTransform() {
+        var scroll = $(window).scrollTop();
+        var translateY = scroll / 3;
+
+        $(".heroscreen__inner").css({
+            transform: "translateY(" + translateY + "px)",
+        });
+
+        isScrolling = false;
+    }
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var brightness = 1 - (scroll / 900);
+        brightness = Math.min(Math.max(brightness, 0), 1);
+        $(".heroscreen__bg").css({
+            filter: "brightness(" + brightness + ")"
+        });
+
+        if (!isScrolling) {
+            isScrolling = true;
+            requestAnimationFrame(updateTransform);
+        }
+    });
+
+
 
 
 

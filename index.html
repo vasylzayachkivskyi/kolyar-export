@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -103,7 +104,7 @@
 
         <main class="main">
 
-            <section class="heroscreen">
+            <section class="heroscreen" data-aos="fade">
                 <picture class="heroscreen__bg">
                     <source srcset="img/heroscreen_mobile.jpg" media="(max-width: 576px)" />
                     <img src="img/heroscreen.jpg" alt="image">
@@ -122,7 +123,7 @@
                 </div>
             </section>
 
-            <section class="infosect">
+            <section class="infosect" data-aos="fade-up" data-aos-delay="200">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -152,31 +153,31 @@
 
             <section class="products">
                 <div class="container">
-                    <div class="products__title">
+                    <div class="products__title" data-aos="fade-up" data-aos-delay="500">
                         <h2 class="secttitle">
                             Наша продукція
                         </h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="products__item">
                                 <img src="img/products1.png" alt="image">
                                 <a href="#">Олії</a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="products__item">
                                 <img src="img/products2.png" alt="image">
                                 <a href="#">Лікарські трави</a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="products__item">
                                 <img src="img/products3.png" alt="image">
                                 <a href="#">Олійні культури</a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="products__item">
                                 <img src="img/products4.png" alt="image">
                                 <a href="#">Насіння</a>
@@ -186,7 +187,7 @@
                 </div>
             </section>
 
-            <section class="recommended">
+            <section class="recommended" data-aos="fade-up">
                 <div class="container">
                     <div class="recommended__title">
                         <h2 class="secttitle">
@@ -302,14 +303,14 @@
 
             <section class="advantages">
                 <div class="container">
-                    <div class="advantages__title">
+                    <div class="advantages__title" data-aos="fade-up" data-aos-delay="500">
                         <h2 class="secttitle">
                             Переваги роботи з нами
                         </h2>
                     </div>
                     <div class="advantages__inner">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                                 <div class="advantages__item">
                                     <span class="number">01</span>
                                     <div class="advantages__item-icon">
@@ -326,7 +327,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                                 <div class="advantages__item">
                                     <span class="number">02</span>
                                     <div class="advantages__item-icon">
@@ -344,7 +345,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                                 <div class="advantages__item">
                                     <span class="number">03</span>
                                     <div class="advantages__item-icon">
@@ -362,7 +363,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                                 <div class="advantages__item">
                                     <span class="number">04</span>
                                     <div class="advantages__item-icon">
@@ -384,7 +385,7 @@
                 </div>
             </section>
 
-            <section class="request" style="background-image: url(img/leave_request_bg.jpg);">
+            <section class="request" style="background-image: url(img/leave_request_bg.jpg);" data-aos="fade" data-aos-delay="200">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-10">
@@ -431,7 +432,7 @@
                                     <input type="text" placeholder="Прізвище*">
                                 </div>
                                 <div class="inputfield phone-field">
-                                    <input type="text" placeholder="+380">
+                                    <input class="phone-input" type="phone" placeholder="+38(___)___-__-__">
                                 </div>
                                 <div class="inputfield">
                                     <input type="text" placeholder="Email">
@@ -555,7 +556,9 @@
 
 
     <script src="js/lib/jquery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 
 

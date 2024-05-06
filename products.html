@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -103,7 +104,7 @@
 
         <main class="main">
 
-            <section class="heroprod">
+            <section class="heroprod" data-aos="fade">
                 <img src="img/products_bg.jpg" alt="image" class="heroprod_bg">
                 <div class="container">
                     <h1>
@@ -115,7 +116,7 @@
             <section class="prodcard">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-up">
                             <a href="single-product.html" class="prodcard__item">
                                <img src="img/products/prod_card1.png" alt="image">
                                 <h3>
@@ -123,7 +124,7 @@
                                 </h3>
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-up">
                             <a href="single-product.html" class="prodcard__item">
                                <img src="img/products/prod_card2.png" alt="image">
                                 <h3>
@@ -131,7 +132,7 @@
                                 </h3>
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-up">
                             <a href="single-product.html" class="prodcard__item">
                                <img src="img/products/prod_card3.png" alt="image">
                                 <h3>
@@ -139,7 +140,7 @@
                                 </h3>
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-up">
                             <a href="single-product.html" class="prodcard__item">
                                <img src="img/products/prod_card4.png" alt="image">
                                 <h3>
@@ -151,8 +152,7 @@
                 </div>
             </section>
 
-
-            <section class="request" style="background-image: url(img/leave_request_bg.jpg);">
+            <section class="request" style="background-image: url(img/leave_request_bg.jpg);" data-aos="fade" data-aos-delay="200">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-10">
@@ -199,7 +199,7 @@
                                     <input type="text" placeholder="Прізвище*">
                                 </div>
                                 <div class="inputfield phone-field">
-                                    <input type="text" placeholder="+380">
+                                    <input class="phone-input" type="phone" placeholder="+38(___)___-__-__">
                                 </div>
                                 <div class="inputfield">
                                     <input type="text" placeholder="Email">
@@ -323,7 +323,9 @@
 
 
     <script src="js/lib/jquery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 
 
