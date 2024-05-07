@@ -38,6 +38,7 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.header__menu').toggleClass('show');
         $('.header').toggleClass('mob-menu');
+        $('body').toggleClass('hidden');
     });
 
     // MOBILE LANG -------- //

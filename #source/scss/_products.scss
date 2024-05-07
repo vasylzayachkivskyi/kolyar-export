@@ -186,6 +186,9 @@
 }
 
 @media (max-width:1199.8px) {
+    .heroprod h1 {
+        font-size: 50px;
+    }
     .prodcard__item {
         padding: 40px;
 
@@ -199,6 +202,9 @@
 }
 
 @media (max-width:991.8px) {
+    .heroprod h1 {
+        font-size: 42px;
+    }
     .prodcard {
         padding: 120px 0 20px;
     }
@@ -235,6 +241,12 @@
 }
 
 @media (max-width:575.8px) {
+    .heroprod h1 {
+        font-size: 36px;
+    }
+    .heroprod {
+        height: 290px;
+    }
     .producttypes__item .background .popup-btn {
         height: 36px;
         padding: 8px;

@@ -50,6 +50,9 @@ h6 {
 body {
     font-family: "Montserrat", sans-serif;
     color: #4F4E4C;
+    &.hidden{
+        overflow: hidden;
+    }
 }
 
 
