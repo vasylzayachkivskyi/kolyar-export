@@ -15,10 +15,16 @@ $(document).ready(function () {
     var swiper = new Swiper(".recommended__slider", {
         slidesPerView: 'auto',
         spaceBetween: 20,
-        speed: 900,
-        scrollbar: {
-            el: ".swiper-scrollbar",
+        loop: true,
+        speed: 1200,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
         },
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -72,6 +78,7 @@ $(document).ready(function () {
         once: true,
         duration: 800,
         easing: 'ease-in-out',
+        offset: -30,
         // disable: 'mobile',
     });
 

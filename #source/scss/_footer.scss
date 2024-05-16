@@ -23,16 +23,19 @@
 .footer__products {
     margin-right: 140px;
 
-    .title {
+    li:first-child {
         font-size: 16px;
         font-weight: 600;
-        margin-bottom: 20px;
-        color: #292A2A;
+        margin-bottom: 15px;
         cursor: default;
+        a{
+            color: #292A2A;
+            font-size: 16px;
+        }
     }
 
     li {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
         &:last-child {
             margin-bottom: 0;
